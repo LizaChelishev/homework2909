@@ -1,13 +1,14 @@
-
 # input numbers until the number <= 0
+max_positive_number = 0
 number = int(input('please enter a number:'))
-list= []
 while number > 0:
+    if number > max_positive_number:
+        max_positive_number = number
     number = int(input('please enter a number:'))
 
 # print the highest value
-    list.append(number)
-
-print(list)
-print('highest value you inserted is' , max(list))
+if max_positive_number == 0:
+    print('no positive numbers were inserted.')
+else:
+    print('highest value you inserted is' , max_positive_number)
 
