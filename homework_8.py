@@ -7,7 +7,7 @@ while number > 0:
     number = int(input('please enter a number:'))
 
 # print the smallest value
-if min_positive_number == 0:
+if min_positive_number <= 0:
     print('no positive numbers were inserted.')
 else:
     print('smallest value you inserted is' , min_positive_number)
